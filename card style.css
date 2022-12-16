@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #34495e;
+    font-family: Arial;
+   
+}
+.card_wrapper{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card_wrapper .card{
+    position: relative;
+    margin: 3% 4%;
+    border-radius: 5px;
+   overflow: hidden;
+    height: 60vh;
+    min-width: 20%;
+    max-width: 300px;
+    cursor: pointer;
+    box-shadow: 10px 30px 40px -13px black;
+}
+.card_wrapper .card h2{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3%;
+    color:#fff ;
+    letter-spacing: 1px;
+    margin: 0px;
+    background: #6184a8;
+}
+.card_wrapper .card img{
+    height: 100%;
+    width: 100%;
+   object-fit: fill;
+}
+.card_wrapper .card .card_desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    background: #6184a8;
+    transition: all 1s ease-in-out;
+}
+.card_wrapper .card .card_desc p{
+    font-size: 1rem;
+    line-height: 1.3;
+    padding: 5%;
+}
+.card_wrapper .card:hover .card_desc{
+    height: 100%;
+}
